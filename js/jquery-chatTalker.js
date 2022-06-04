@@ -7,5 +7,5 @@ $('.click').click(function () {
 });
 
 $('button').click(function () {
-  $('.words').toggle();
+  $('.words').slideToggle(2000);
 });
