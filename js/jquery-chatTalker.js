@@ -1,3 +1,7 @@
-$(document).ready(function() {
-    $('h2').hide();
-})
+$(document).ready(function () {
+  $('h2').hide();
+});
+
+$('.click').click(function () {
+  $('p').hide();
+});
