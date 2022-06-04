@@ -5,3 +5,7 @@ $(document).ready(function () {
 $('.click').click(function () {
   $('p').hide();
 });
+
+$('button').click(function () {
+  $('.words').toggle();
+});
