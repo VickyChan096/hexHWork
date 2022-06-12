@@ -316,7 +316,7 @@ h3 {
 .content__img {
   width: 100%;
   margin-bottom: 92px;
-  background: url("images/bg_home_sm.svg") no-repeat bottom;
+  background: url("../images/bg_home_sm.svg") no-repeat bottom;
   background-size: contain;
 }
 
