@@ -162,7 +162,7 @@ body {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1088px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -197,10 +197,6 @@ body {
 .btnStyle-red:hover {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
-}
-
-.height800 {
-  height: 800px;
 }
 
 .header {
@@ -243,52 +239,6 @@ body {
 @media only screen and (min-width: 376px) {
   .header .logo {
     width: 200px;
-  }
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 293px;
-  background: url("images/footer_sm.svg") no-repeat top;
-  background-size: contain;
-}
-
-@media only screen and (min-width: 376px) {
-  .footer {
-    background: url("images/home_footer.svg") no-repeat top;
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .footer {
-    padding-top: 260px;
-    background-size: contain;
-  }
-}
-
-.footer h4 {
-  width: 100%;
-  margin-bottom: 24px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-}
-
-@media only screen and (min-width: 769px) {
-  .footer h4 {
-    margin-bottom: 48px;
-    font-size: 32px;
   }
 }
 

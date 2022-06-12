@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1088px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -42,10 +42,6 @@ body {
   }
 }
 
-.height800 {
-  height: 800px;
-}
-
 .header {
   z-index: 1;
   position: sticky;
@@ -75,35 +71,6 @@ body {
 }
 
 .footer {
-  @include displayFlex($fxw: wrap);
-  padding-top: 293px;
-  background: url("images/footer_sm.svg") no-repeat top;
-  background-size: contain;
-
-  @include pad {
-    background: url("images/home_footer.svg") no-repeat top;
-    background-size: cover;
-  }
-
-  @include desktop {
-    padding-top: 260px;
-    background-size: contain;
-  }
-
-
-  h4 {
-    width: 100%;
-    margin-bottom: 24px;
-    font-size: $fontSize-s * 1.5;
-    font-weight: $fontWeight-l;
-    text-align: center;
-
-    @include desktop {
-      margin-bottom: 48px;
-      font-size: $fontSize-s * 2;
-    }
-  }
-
   p {
     width: 100%;
     margin-top: 60px;
