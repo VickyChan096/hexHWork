@@ -443,11 +443,12 @@ h3 {
 .footer {
   @include displayFlex($fxw: wrap);
   padding-top: 293px;
-  background: url("images/footer_sm.svg") no-repeat top;
+  background-image: url("images/footer_sm.svg") no-repeat;
+  background-position: top;
   background-size: contain;
 
   @include pad {
-    background: url("images/home_footer.svg") no-repeat top;
+    background: url("images/home_footer.svg") no-repeat;
     background-size: cover;
   }
 

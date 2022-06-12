@@ -790,13 +790,14 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 293px;
-  background: url("images/footer_sm.svg") no-repeat top;
+  background-image: url("images/footer_sm.svg") no-repeat;
+  background-position: top;
   background-size: contain;
 }
 
 @media only screen and (min-width: 376px) {
   .footer {
-    background: url("images/home_footer.svg") no-repeat top;
+    background: url("images/home_footer.svg") no-repeat;
     background-size: cover;
   }
 }
