@@ -790,14 +790,13 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 293px;
-  background-image: url("images/footer_sm.svg") no-repeat;
-  background-position: top;
+  background: url("https://vickychan096.github.io/hexHWork/images/footer_sm.svg") no-repeat top;
   background-size: contain;
 }
 
 @media only screen and (min-width: 376px) {
   .footer {
-    background-image: url("images/home_footer.svg") no-repeat;
+    background: url("https://vickychan096.github.io/hexHWork/images/home_footer.svg") no-repeat top;
     background-size: cover;
   }
 }
