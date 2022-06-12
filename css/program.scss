@@ -14,6 +14,25 @@ body {
   margin: 0 auto;
 }
 
+.btnStyle-list {
+  margin-right: 16px;
+  border: 1px solid $colorSecond;
+  background-color: #fff;
+  transition: $transFast;
+  border-radius: 27px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: $fontSize-s;
+  color: $colorSecond;
+
+  // &:hover {
+  //   color: #fff;
+  //   background-color: $colorSecond;
+  // }
+}
+
 .btnStyle-green {
   display: inline-block;
   padding: 12px 32px;
@@ -39,6 +58,15 @@ body {
 
   &:hover {
     filter: brightness(130%);
+  }
+}
+h3 {
+  text-align: center;
+  font-size: $fontSize-l * 1.4;
+  font-weight: $fontWeight-l;
+
+  @include pad {
+    font-size: $fontSize-s * 2;
   }
 }
 
@@ -70,10 +98,66 @@ body {
   }
 }
 
+.content {
+  padding-top: 48px;
+  padding-bottom: 361px;
+
+  @include pad {
+    padding-top: 116px;
+    padding-bottom: 180px;
+  }
+
+  &__headline {
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: $fontSize-s * 2;
+      font-weight: $fontWeight-l;
+
+      @include desktop {
+        font-size: $fontSize-s * 3;
+      }
+    }
+
+    p {
+      @include desktop {
+        font-size: $fontSize-l;
+      }
+    }
+  }
+}
+
+.contentBg {
+  position: absolute;
+  width: 100%;
+  height: 495px;
+  top: 10vh;
+  z-index: -1;
+  background: url("../images/banner_sm.svg") no-repeat center;
+  background-size: cover;
+
+  @include pad {
+    top: 0;
+    height: 50vh;
+    background: url("../images/banner.svg") no-repeat top right;
+    background-size: contain;
+  }
+
+  @include desktop {
+    height: 559px;
+  }
+}
+.program{
+  &__priceList{
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+}
 .footer {
   p {
     width: 100%;
-    margin-top: 60px;
+    // margin-top: 60px;
     padding: 16px 0;
     font-size: $fontSize-s;
     text-align: center;

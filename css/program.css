@@ -134,6 +134,7 @@ table {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid #aaa;
 }
 
 body {
@@ -167,6 +168,21 @@ body {
   margin: 0 auto;
 }
 
+.btnStyle-list {
+  margin-right: 16px;
+  border: 1px solid #56C4C5;
+  background-color: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius: 27px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #56C4C5;
+}
+
 .btnStyle-green {
   display: inline-block;
   padding: 12px 32px;
@@ -197,6 +213,18 @@ body {
 .btnStyle-red:hover {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 376px) {
+  h3 {
+    font-size: 32px;
+  }
 }
 
 .header {
@@ -242,9 +270,73 @@ body {
   }
 }
 
+.content {
+  padding-top: 48px;
+  padding-bottom: 361px;
+}
+
+@media only screen and (min-width: 376px) {
+  .content {
+    padding-top: 116px;
+    padding-bottom: 180px;
+  }
+}
+
+.content__headline h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 769px) {
+  .content__headline h2 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .content__headline p {
+    font-size: 20px;
+  }
+}
+
+.contentBg {
+  position: absolute;
+  width: 100%;
+  height: 495px;
+  top: 10vh;
+  z-index: -1;
+  background: url("../images/banner_sm.svg") no-repeat center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 376px) {
+  .contentBg {
+    top: 0;
+    height: 50vh;
+    background: url("../images/banner.svg") no-repeat top right;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .contentBg {
+    height: 559px;
+  }
+}
+
+.program__priceList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  overflow-x: scroll;
+}
+
 .footer p {
   width: 100%;
-  margin-top: 60px;
   padding: 16px 0;
   font-size: 16px;
   text-align: center;
