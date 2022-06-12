@@ -46,6 +46,34 @@ body {
   height: 800px;
 }
 
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 4px solid $colorThird;
+
+  @include desktop {
+    position: static;
+    background: none;
+    border-bottom: none;
+  }
+
+  .container {
+    @include displayFlex($jc: space-between);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .logo {
+    width: 128px;
+
+    @include pad {
+      width: 200px;
+    }
+  }
+}
+
 .footer {
   @include displayFlex($fxw: wrap);
   padding-top: 293px;
