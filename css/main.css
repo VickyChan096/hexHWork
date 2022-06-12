@@ -347,7 +347,7 @@ h3 {
     top: 0;
     right: 0;
     z-index: -1;
-    background: url("images/bg_home.svg") no-repeat right;
+    background: url("../images/bg_home.svg") no-repeat right;
     background-size: container;
   }
 }
