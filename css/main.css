@@ -200,6 +200,90 @@ body {
           filter: brightness(130%);
 }
 
+.btnStyle-list {
+  margin-right: 16px;
+}
+
+.btnStyle-list a {
+  display: inline-block;
+  width: 110px;
+  padding: 8px 16px;
+  color: #56C4C5;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 27px;
+  border: 1px solid #56C4C5;
+  background-color: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btnStyle-list a:hover {
+  color: #fff;
+  background-color: #56C4C5;
+}
+
+#btnStyle-list-active a {
+  color: #fff;
+  background-color: #56C4C5;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 376px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+body {
+  color: #221E1F;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1088px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btnStyle-green {
+  display: inline-block;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 27px;
+  background-color: #56C4C5;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btnStyle-green:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.btnStyle-red {
+  display: inline-block;
+  padding: 8px 32px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 22px;
+  background-color: #FF5D50;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btnStyle-red:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
 h3 {
   text-align: center;
   font-size: 28px;

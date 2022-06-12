@@ -1,0 +1,78 @@
+body {
+  color: $colorMain;
+  font-size: $fontSize-s;
+  font-weight: $fontWeight-m;
+}
+
+.container {
+  max-width: 1088px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btnStyle-green {
+  display: inline-block;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: $fontSize-m;
+  border-radius: 27px;
+  background-color: $colorSecond;
+  transition: $transFast;
+
+  &:hover {
+    filter: brightness(115%);
+  }
+}
+
+.btnStyle-red {
+  display: inline-block;
+  padding: 8px 32px;
+  color: #fff;
+  font-size: $fontSize-s;
+  border-radius: 22px;
+  background-color: #FF5D50;
+  transition: $transFast;
+
+  &:hover {
+    filter: brightness(130%);
+  }
+}
+
+.btnStyle-list {
+  margin-right: 16px;
+
+  a {
+    display: inline-block;
+    width: 110px;
+    padding: 8px 16px;
+    color: $colorSecond;
+    font-size: $fontSize-s;
+    text-align: center;
+    border-radius: 27px;
+    border: 1px solid $colorSecond;
+    background-color: #fff;
+    transition: $transFast;
+
+    &:hover {
+      color: #fff;
+      background-color: $colorSecond;
+    }
+  }
+}
+
+#btnStyle-list-active {
+  a {
+    color: #fff;
+    background-color: $colorSecond;
+  }
+}
+
+h3 {
+  text-align: center;
+  font-size: $fontSize-l * 1.4;
+  font-weight: $fontWeight-l;
+
+  @include pad {
+    font-size: $fontSize-s * 2;
+  }
+}

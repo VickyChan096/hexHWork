@@ -168,21 +168,6 @@ body {
   margin: 0 auto;
 }
 
-.btnStyle-list {
-  margin-right: 16px;
-  border: 1px solid #56C4C5;
-  background-color: #fff;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius: 27px;
-  width: 100px;
-  text-align: center;
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: 16px;
-  color: #56C4C5;
-}
-
 .btnStyle-green {
   display: inline-block;
   padding: 12px 32px;
@@ -213,6 +198,34 @@ body {
 .btnStyle-red:hover {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
+}
+
+.btnStyle-list {
+  margin-right: 16px;
+}
+
+.btnStyle-list a {
+  display: inline-block;
+  width: 110px;
+  padding: 8px 16px;
+  color: #56C4C5;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 27px;
+  border: 1px solid #56C4C5;
+  background-color: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btnStyle-list a:hover {
+  color: #fff;
+  background-color: #56C4C5;
+}
+
+#btnStyle-list-active a {
+  color: #fff;
+  background-color: #56C4C5;
 }
 
 h3 {
@@ -333,6 +346,135 @@ h3 {
       -ms-flex-pack: start;
           justify-content: start;
   overflow-x: scroll;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 665px) {
+  .program__priceList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.program__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 16px;
+}
+
+@media only screen and (min-width: 769px) {
+  .program__plan {
+    margin-left: -10px;
+    margin-right: -10px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.planCard {
+  width: 100%;
+  padding: 16px 16px 24px 16px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .planCard {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50%;
+  }
+}
+
+.planCard__version {
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.planCard__describe {
+  padding: 24px 0;
+}
+
+.planCard__calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 27px;
+}
+
+.planCard__calc__quantity {
+  width: 45%;
+  padding: 16px 0;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+}
+
+.planCard__calc__quantity .susTotal {
+  font-size: 12px;
+}
+
+.planCard__calc__quantity .susNum {
+  font-size: 28px;
+  color: #56C4C5;
+}
+
+.planCard__calc__quantity .colorMain {
+  color: #221E1F;
+}
+
+.planCard__calc__quantity .susNum sub {
+  vertical-align: baseline;
+  font-size: 12px;
+}
+
+.planCard__calc__equal {
+  width: 10%;
+  font-size: 24px;
+}
+
+.planCard__list {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.planCard__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 8px 0;
+}
+
+.planCard__list li img {
+  padding-right: 16px;
+}
+
+.planCard__list li p {
+  font-size: 14px;
 }
 
 .footer p {
