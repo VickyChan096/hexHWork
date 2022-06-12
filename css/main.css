@@ -797,7 +797,7 @@ h3 {
 
 @media only screen and (min-width: 376px) {
   .footer {
-    background: url("images/home_footer.svg") no-repeat;
+    background-image: url("images/home_footer.svg") no-repeat;
     background-size: cover;
   }
 }
