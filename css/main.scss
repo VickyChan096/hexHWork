@@ -3,56 +3,6 @@
 @import "mixin";
 @import "common";
 
-body {
-  color: $colorMain;
-  font-size: $fontSize-s;
-  font-weight: $fontWeight-m;
-}
-
-.container {
-  max-width: 1088px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.btnStyle-green {
-  display: inline-block;
-  padding: 12px 32px;
-  color: #fff;
-  font-size: $fontSize-m;
-  border-radius: 27px;
-  background-color: $colorSecond;
-  transition: $transFast;
-
-  &:hover {
-    filter: brightness(115%);
-  }
-}
-
-.btnStyle-red {
-  display: inline-block;
-  padding: 8px 32px;
-  color: #fff;
-  font-size: $fontSize-s;
-  border-radius: 22px;
-  background-color: #FF5D50;
-  transition: $transFast;
-
-  &:hover {
-    filter: brightness(130%);
-  }
-}
-
-h3 {
-  text-align: center;
-  font-size: $fontSize-l * 1.4;
-  font-weight: $fontWeight-l;
-
-  @include pad {
-    font-size: $fontSize-s * 2;
-  }
-}
-
 .header {
   z-index: 1;
   position: sticky;

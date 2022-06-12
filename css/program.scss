@@ -93,11 +93,13 @@
       justify-content: center;
     }
   }
-  &__plan{
+
+  &__plan {
     display: flex;
     flex-wrap: wrap;
     padding-top: 16px;
-    @include desktop{
+
+    @include desktop {
       margin-left: -10px;
       margin-right: -10px;
       flex-wrap: nowrap;
@@ -112,67 +114,125 @@
   border-radius: 12px;
   box-shadow: $boxShadow;
   text-align: center;
-  @include desktop{
+
+  @include desktop {
+    padding: 16px 29px 32px 29px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 50%;
+    width: calc(50% - 20px);
   }
-  &__version{
+
+  &__version {
     padding-bottom: 16px;
     font-size: $fontSize-s * 1.5;
     font-weight: $fontWeight-l;
   }
-  &__describe{
-    padding: 24px 0 ;
+
+  &__describe {
+    padding: 24px 0;
   }
-  &__calc{
+
+  &__calc {
     @include displayFlex;
     margin-bottom: 27px;
-    &__quantity{
+
+    &__quantity {
       width: 45%;
       padding: 16px 0;
       border-radius: 12px;
       background-color: #F5F5F5;
-      .susTotal{
+
+      @include desktop {
+        width: 169px;
+      }
+
+      .susTotal {
         font-size: $fontSize-s * 0.75;
       }
-      .susNum{
+
+      .susNum {
         font-size: 28px;
         color: $colorSecond;
+
+        @include desktop {
+          font-size: $fontSize-s * 2;
+        }
       }
-      .colorMain{
+
+      .colorMain {
         color: $colorMain;
       }
-      .susNum sub{
+
+      .susNum sub {
         vertical-align: baseline;
         font-size: $fontSize-s * 0.75;
       }
     }
-    &__equal{
+
+    &__equal {
       width: 10%;
       font-size: $fontSize-s * 1.5;
     }
   }
-  &__list{
+
+  &__list {
     margin-bottom: 24px;
     text-align: left;
-    li{
+
+    li {
       @include displayFlex($jc: left);
       padding: 8px 0;
-      img{
+
+      img {
         padding-right: 16px;
       }
-      p{
-        font-size: $fontSize-s * 0.875;
+
+    }
+    li p {
+      font-size: $fontSize-s * 0.875;
+
+      @include pad {
+        font-size: $fontSize-s;
       }
     }
+  }
+}
+
+.question{
+  h3{
+    padding: 36px 0 32px 0;
+  }
+  &__frame{
+  }
+}
+.qaCard{
+  width: 100%;
+  padding: 16px 16px 16px 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: $boxShadow;
+  &__question{
+    @include displayFlex($jc: space-between);
+    p{
+      font-weight: $fontWeight-l;
+      color: $colorSecond;
+    }
+  }
+  .unclick p{
+    color: #221E1F;
+    font-weight: $fontWeight-m;
+  }
+  &__answer{
+    padding-top: 16px;
+    color: #747474;
+    line-height: 2;
   }
 }
 
 .footer {
   p {
     width: 100%;
-    // margin-top: 60px;
+    margin-top: 60px;
     padding: 16px 0;
     font-size: $fontSize-s;
     text-align: center;
