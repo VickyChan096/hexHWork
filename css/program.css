@@ -134,7 +134,6 @@ table {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid #aaa;
 }
 
 body {
@@ -255,6 +254,7 @@ h3 {
   position: fixed;
   top: 80vh;
   right: calc(50% - 45vw);
+  z-index: 99;
   width: 71px;
   height: 71px;
   font-size: 18px;
