@@ -88,6 +88,7 @@ h3 {
   border-radius: 50%;
   background-color: $colorSecond;
   color: #fff;
+  cursor: pointer;
   @media (min-width: 1200px){
   right: calc(50% - 594px);
   }

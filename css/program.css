@@ -261,6 +261,7 @@ h3 {
   border-radius: 50%;
   background-color: #56C4C5;
   color: #fff;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
