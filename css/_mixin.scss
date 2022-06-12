@@ -1,0 +1,24 @@
+@mixin displayFlex($jc: center, $ai: center, $fxw: nowrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fxw;
+}
+
+@mixin pad {
+    @media only screen and (min-width: 376px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin ball {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}

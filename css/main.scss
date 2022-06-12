@@ -1,0 +1,489 @@
+@import "variable";
+@import "reset";
+@import "mixin";
+
+body {
+  color: $colorMain;
+  font-size: $fontSize-s;
+  font-weight: $fontWeight-m;
+}
+
+.container {
+  max-width: 1128px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btnStyle-green {
+  display: inline-block;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: $fontSize-m;
+  border-radius: 27px;
+  background-color: $colorSecond;
+  transition: $transFast;
+
+  &:hover {
+    filter: brightness(115%);
+  }
+}
+
+.btnStyle-red {
+  display: inline-block;
+  padding: 8px 32px;
+  color: #fff;
+  font-size: $fontSize-s;
+  border-radius: 22px;
+  background-color: #FF5D50;
+  transition: $transFast;
+
+  &:hover {
+    filter: brightness(130%);
+  }
+}
+
+.height800 {
+  height: 800px;
+}
+
+h3 {
+  text-align: center;
+  font-size: $fontSize-l * 1.4;
+  font-weight: $fontWeight-l;
+
+  @include pad {
+    font-size: $fontSize-s * 2;
+  }
+}
+
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 4px solid $colorThird;
+
+  @include desktop {
+    position: static;
+    background: none;
+    border-bottom: none;
+  }
+
+  .container {
+    @include displayFlex($jc: space-between);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .logo {
+    width: 128px;
+
+    @include pad {
+      width: 200px;
+    }
+  }
+}
+
+.content {
+  @include displayFlex($fxw: wrap);
+
+  @include desktop {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  &__headline {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    h4 {
+      font-size: $fontSize-s;
+      font-weight: $fontWeight-l;
+      color: $colorSecond;
+
+      @include desktop {
+        font-size: $fontSize-m;
+      }
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: $fontSize-s * 2;
+      font-weight: $fontWeight-l;
+
+      @include desktop {
+        font-size: $fontSize-s * 3;
+      }
+    }
+
+    p {
+      @include desktop {
+        font-size: $fontSize-l;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 92px;
+    background: url("/images/bg_home_sm.svg") no-repeat bottom;
+    background-size: contain;
+
+    @include desktop {
+      margin-bottom: 217px;
+      max-width: 532px;
+      background: none;
+    }
+
+    img {
+      @include desktop {
+        width: 532px;
+      }
+    }
+
+    &__desktopBg {
+      display: none;
+
+      @include desktop {
+        position: absolute;
+        display: block;
+        width: 850px;
+        height: 768px;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: url("/images/bg_home.svg") no-repeat right;
+        background-size: container;
+      }
+    }
+  }
+}
+
+.platform {
+  margin-bottom: 36px;
+
+  @include pad {
+    margin-bottom: 76px;
+  }
+
+  &__content {
+    margin-top: 32px;
+
+    @include desktop {
+      @include displayFlex;
+    }
+  }
+}
+
+.platformApp {
+  @include displayFlex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  width: 100%;
+
+  @include desktop {
+    width: 33.33%;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  &__img {
+    width: 60px;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: $fontSize-m;
+    font-weight: $fontWeight-l;
+    margin-bottom: 16px;
+  }
+
+  &__describe {
+    color: #747474;
+  }
+}
+
+.bgBall-green {
+  @include ball;
+  top: 780px;
+  left: -77px;
+  width: 126px;
+  height: 126px;
+  background-color: $colorSecond;
+
+  @include pad {
+    display: block;
+    top: 580px;
+    left: calc(50% - 870px);
+    width: 360px;
+    height: 360px;
+  }
+
+}
+
+.target {
+  margin-bottom: 52px;
+
+  @include pad {
+    margin-bottom: 92px;
+  }
+
+  &__describe {
+    font-size: $fontSize-m;
+    padding: 16px 0 32px 0;
+    text-align: center;
+
+    @include pad {
+      font-size: $fontSize-l;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include pad {
+      flex-wrap: wrap;
+      align-items: stretch;
+      flex-direction: row;
+    }
+
+    @include desktop {
+      margin: 0px -8px;
+    }
+  }
+}
+
+.targetCard {
+  width: 260px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: $boxShadow;
+
+  @include pad {
+    width: calc(50% - 16px);
+    margin: 8px 8px;
+  }
+
+  @include desktop {
+    width: calc(25% - 16px);
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__name {
+    padding: 16px 0;
+    color: $colorSecond;
+    font-weight: $fontWeight-l;
+  }
+
+  &__describe {
+    padding-bottom: 24px;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+.function {
+  @include desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  &__describe {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include desktop {
+      width: 50%;
+      text-align: left;
+
+      h3 {
+        text-align: left;
+      }
+    }
+
+    p {
+      padding: 16px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include pad {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      justify-content: left;
+    }
+  }
+}
+
+.order-1 {
+  order: -1;
+}
+
+.functionCard {
+  width: 230px;
+  padding: 32px 24px 48px 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: $boxShadow;
+
+  @include pad {
+    max-width: 230px;
+    width: calc(50% - 16px);
+    margin: 8px;
+  }
+
+  @media (min-width: 1088px) {
+    margin: 0 47px 28px 0;
+  }
+
+  &__icon {
+    @include displayFlex;
+    width: 86px;
+    height: 86px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    box-shadow: $boxShadow;
+  }
+
+  &__name {
+    font-size: $fontSize-m;
+    font-weight: $fontWeight-l;
+    margin-bottom: 20px;
+  }
+}
+
+.feedback {
+  padding-top: 52px;
+  padding-bottom: 90px;
+
+  @include pad {
+    padding-top: 92px;
+  }
+
+  &__list {
+    @include displayFlex($fxw: wrap);
+
+    @include desktop {
+      align-items: stretch;
+    }
+  }
+}
+
+.feedbackCard {
+  position: relative;
+  margin-top: 88px;
+  padding: 48px 16px 16px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: $boxShadow;
+
+  @include desktop {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 48px 32px;
+    width: calc(33.33% - 16px);
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid #00000014;
+  }
+
+  &__photo {
+    position: absolute;
+    top: -50px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  &__describe {
+    // height: 150px;
+    padding-bottom: 16px;
+  }
+
+  &__name {
+    padding: 8px 0;
+    font-weight: $fontWeight-l;
+  }
+
+  &__score {
+    @include displayFlex($jc: space-between);
+    // position: relative;
+
+    &__star {
+      @include displayFlex;
+
+      img {
+        display: inline-block;
+        padding: 0 4px;
+      }
+    }
+
+  }
+}
+
+.footer {
+  @include displayFlex($fxw: wrap);
+  padding-top: 293px;
+  background: url("/images/footer_sm.svg") no-repeat top;
+  background-size: contain;
+
+  @include pad {
+    background: url("/images/home_footer.svg") no-repeat top;
+    background-size: cover;
+  }
+
+  @include desktop {
+    padding-top: 260px;
+    background-size: contain;
+  }
+
+
+  h4 {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: $fontSize-s * 1.5;
+    font-weight: $fontWeight-l;
+    text-align: center;
+
+    @include desktop {
+      margin-bottom: 48px;
+      font-size: $fontSize-s * 2;
+    }
+  }
+
+  p {
+    width: 100%;
+    margin-top: 60px;
+    padding: 16px 0;
+    font-size: $fontSize-s;
+    text-align: center;
+    background-color: #F5F5F5;
+
+    @include desktop {
+      margin-top: 100px;
+    }
+  }
+}
